@@ -1,0 +1,326 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff8f0;
+  color: #333;
+}
+
+button {
+  background: #ff6b35;
+  color: white;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #e64d20;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* LOGIN AND SIGNUP */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffb36b, #ffe5c9);
+}
+
+.auth-box {
+  background: white;
+  width: 360px;
+  max-width: 90%;
+  padding: 35px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #aaa;
+}
+
+.auth-box h1 {
+  color: #ff6b35;
+  margin-bottom: 15px;
+}
+
+.auth-box h2 {
+  margin-bottom: 12px;
+}
+
+.auth-box p {
+  margin: 15px 0;
+}
+
+.auth-box input {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin: 13px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.auth-box button {
+  width: 100%;
+}
+
+.auth-box .switch-btn {
+  background: #444;
+}
+
+/* HEADER */
+
+.header {
+  background: #ff6b35;
+  color: white;
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header span {
+  font-weight: bold;
+}
+
+/* HOME */
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: #ffe0bd;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.hero a {
+  display: inline-block;
+  background: #ff6b35;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* FOOD MENU */
+
+.menu {
+  padding: 45px 5%;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 25px;
+}
+
+.search {
+  width: 280px;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.categories {
+  margin-bottom: 25px;
+}
+
+.categories .active {
+  background: #333;
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  );
+  gap: 25px;
+}
+
+.food-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px #ddd;
+  transition: transform 0.2s;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+}
+
+.food-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-card h3 {
+  margin: 12px;
+  color: #ff6b35;
+}
+
+.food-card p {
+  margin: 10px;
+  color: #666;
+}
+
+/* CART */
+
+.cart {
+  background: white;
+  margin: 30px 5%;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #ddd;
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+  width: 65px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* PAYMENT */
+
+.payment-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe0bd;
+  padding: 20px;
+}
+
+.payment-box {
+  background: white;
+  width: 450px;
+  max-width: 100%;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #bbb;
+}
+
+.payment-box h1 {
+  color: #ff6b35;
+  margin-bottom: 20px;
+}
+
+.payment-box h2,
+.payment-box h3 {
+  margin: 20px 0;
+}
+
+.payment-box label {
+  display: block;
+  padding: 14px;
+  border: 1px solid #ddd;
+  margin: 12px 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.payment-box input {
+  margin-right: 12px;
+}
+
+/* ORDER SUCCESS */
+
+.success-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background: #fff0df;
+  gap: 20px;
+}
+
+.success-page h1 {
+  color: green;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  line-height: 2;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header nav {
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .cart-item {
+    gap: 8px;
+  }
+}
